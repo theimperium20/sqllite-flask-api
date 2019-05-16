@@ -1,1 +1,1 @@
-web gunicorn manage:app
+web gunicorn employee_details:app
