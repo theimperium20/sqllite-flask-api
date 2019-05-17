@@ -2,4 +2,4 @@ flask
 flask_sqlalchemy
 flask_marshmallow
 email_to
-guicorn
+gunicorn==19.7.1
