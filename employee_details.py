@@ -64,7 +64,7 @@ def add_employee():
 
 # Get All Employees
 @app.route('/api/v1/employee', methods=['GET'])
-def get_employees(employee_id):
+def get_employees():
   all_employees = Employee.query.all()
   result = employees_schema.dump(all_employees)
   return jsonify(result.data)
@@ -72,7 +72,7 @@ def get_employees(employee_id):
 
 # Get Employee by ID
 @app.route('/api/v1/employee/<employee_id>', methods=['GET'])
-def get_employee():
+def get_employee(employee_id):
   employee = Employee.query.get(employee_id)
   
   result = employee_schema.dump(employee)
