@@ -17,4 +17,4 @@ It sends email triggers whenever the a new device is associated/disassociated
 -PATCH /api/v1/employees/device/id `--Expects id {"device_id":value}` `--Returns the updated records`
 -PATCH /api/v1/employees/email/id `--Expects id {"email":"value"}` `--Returns the updated records`
 
-
+### Live API server base url https://minancetest.herokuapp.com/
