@@ -35,7 +35,7 @@ class Employee(db.Model):
     self.device_id = device_id
     self.email = email
 
-#db.create_all()
+db.create_all()
 
 # Employee Schema
 class EmployeeSchema(ma.Schema):
@@ -148,4 +148,4 @@ def delete_employee(employee_id):
 # Run Server
 if __name__ == '__main__':
   app.run(debug=True)
-  db.create_all()
+  
