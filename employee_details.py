@@ -35,7 +35,7 @@ class Employee(db.Model):
     self.device_id = device_id
     self.email = email
 
-db.create_all()
+#db.create_all()
 
 # Employee Schema
 class EmployeeSchema(ma.Schema):
